@@ -75,8 +75,11 @@ Hier wordt, nadat het document geladen is, de geolocatie opgevraagd, de stijl wo
 De verschillende tabs worden gedefinieerd volgens de jquery-ui syntax. De titels van de tabs zijn links binnen een lijst die verwijzen naar een id. De inhoud van iedere tab bevindt zich in een aparte div.
 Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig de opmaak te doen, zodat deze niet conflicteerd met uw website).
 
-### 3.1  Weather.js
+### 3.2  Weather.js
 
+
+### 3.3  seasonStyle.js
+In dit bestand regelen we de automatische verandering van stijl van de weer-applicatie.
 
 
 
