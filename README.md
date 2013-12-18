@@ -111,19 +111,20 @@ Krijgt alle informatie mee en zorgt dat deze in de correcte html-blokken terecht
 ``` javascript
 function processWeatherInformation(weather, object)
 ```
-
 Het huidige weer-object en een jquery-object van de html-blok waarin de informatie moet terecht komen wordt meegegeven.
 De informatie wordt in de blokken ge-append. De windrichting in graden wordt ook omgezet in een gebruiksvriendelijker formaat, met behulp van voorgedefinieerde variabelen.
 
 ### 3.3  seasonStyle.js
 In dit bestand regelen we de automatische verandering van stijl van de weer-applicatie.
 
-``` javascript function getSeason()```
+``` javascript 
+function getSeason()
+```
+Deze functie vraagt de maand op van de huidige datum. Aan de hand daarvan overloopt hij het getal in een                case-structuur om zo te kunnen bepalen welk seizoen het is. 
 
-   Deze functie vraagt de maand op van de huidige datum. Aan de hand daarvan overloopt hij het getal in een                case-structuur om zo te kunnen bepalen welk seizoen het is. 
-
-``` javascript function changeStyle(style)```
-
+``` javascript 
+function changeStyle(style)
+```
 Voor elk seizoen wordt de stijl aangepast.
 
 
