@@ -81,6 +81,12 @@ Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig 
 ### 3.3  seasonStyle.js
 In dit bestand regelen we de automatische verandering van stijl van de weer-applicatie.
 
+`function getSeason()`
+Deze functie vraagt de maand op van de huidige datum. Aan de hand daarvan overloopt hij het getal in een case-structuur om zo te kunnen bepalen welk seizoen het is. Afhankelijk van het seizoen zal de opmaak veranderen.
+
+`function changeStyle(style)`
+
+
 
 
 
