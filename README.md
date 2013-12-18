@@ -77,6 +77,8 @@ Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig 
 
 ### 3.2  Weather.js
 
+In dit bestand bevindt zich de kern van de weather-app. Hier wordt alle nodige informatie opgehaald en verwerkt.
+
 ``` javascript
 function getPos()
 ```
