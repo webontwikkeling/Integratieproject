@@ -78,65 +78,53 @@ Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig 
 ### 3.2  Weather.js
 
 ``` javascript
-
 function getPos()
-
 ```
 Haalt de positie op met behulp van een geolocatie opdracht. Indien geolocatie niet ondersteund wordt of indien er fouten optreden, logt hij deze in de console.
 
 ``` javascript
-
 function getSucces(position)
-
 ```
 Als de getPos() functie succesvol de geolocatie opgehaald heeft, wordt deze functie uitgevoerd. Het maakt een AJAX call naar de openweathermap api om het weer van vandaag en morgen op te halen.
 Als dit gebeurd is, stopt het deze data in aparte objecten en laat deze informatie dan verwerkt worden.
 
 ``` javascript
-
 function generateWeather(json, day)
-
 ```
 Deze functie krijgt een json object mee dat weer-informatie bevat en de index die aangeeft welke dag moet gebruikt worden (0: vandaag, 1: morgen, ...). Hiermee wordt een object aangemaakt dat makkelijker in te lezen en gebruiken valt.
 
 ``` javascript
-
 function getFailed(error) 
-
 ```
 Indien de positie niet kan opgehaald worden, moet een error gelogd worden. Dit is een hulpfunctie hiervoor.
 
 ``` javascript
-
 function logError(msg)
-
 ```
 Deze functie logt de boodschap die hij meekrijgt in de console.
 
 ``` javascript
-
 function processInformation(lat,lon,today, tomorrow)
-
 ```
 Krijgt alle informatie mee en zorgt dat deze in de correcte html-blokken terecht komen. De geolocatie wordt rechtstreeks ingevuld. Voor het weer wordt een hulpfunctie gebruikt.
 
 ``` javascript
-
 function processWeatherInformation(weather, object)
-
 ```
+
 Het huidige weer-object en een jquery-object van de html-blok waarin de informatie moet terecht komen wordt meegegeven.
 De informatie wordt in de blokken ge-append. De windrichting in graden wordt ook omgezet in een gebruiksvriendelijker formaat, met behulp van voorgedefinieerde variabelen.
 
 ### 3.3  seasonStyle.js
 In dit bestand regelen we de automatische verandering van stijl van de weer-applicatie.
 
-```function getSeason()```
+``` javascript function getSeason()```
 
-   Deze functie vraagt de maand op van de huidige datum. Aan de hand daarvan overloopt hij het getal in een                case-structuur om zo te kunnen bepalen welk seizoen het is. Afhankelijk van het seizoen zal de opmaak veranderen.
+   Deze functie vraagt de maand op van de huidige datum. Aan de hand daarvan overloopt hij het getal in een                case-structuur om zo te kunnen bepalen welk seizoen het is. 
 
-```function changeStyle(style)```
+``` javascript function changeStyle(style)```
 
+Voor elk seizoen wordt de stijl aangepast.
 
 
 
