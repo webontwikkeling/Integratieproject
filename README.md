@@ -130,5 +130,18 @@ function changeStyle(style)
 Voor elk seizoen wordt de stijl aangepast.
 
 
+4  Voorbeeld 
+------------
 
+### 4.1  Winter
+![Winter](http://puu.sh/5Qxhx.png "Winter")
+
+### 4.2  Lente
+![Lente](http://puu.sh/5Qxrk.png "Lente")
+
+### 4.3  Zomer
+![Zomer](http://puu.sh/5Qxtd.png "Zomer")
+
+### 4.4  Herfst
+![Herfst](http://puu.sh/5Qxu8.png "Herfst")
 
