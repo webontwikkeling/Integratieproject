@@ -18,7 +18,7 @@ De applicatie is voorzien van een voorgeprogrammeerde stijlverandering afhankeli
 ### 3.1  Weather.html
 
 De webpagina zelf, hierin worden de verschillende blok-elementen gedefinieerd en de verschillende scripts ingeladen.
-´´´ html
+``` javascript
 <script>
     $(document).ready(function () {
         getPos();
@@ -27,11 +27,11 @@ De webpagina zelf, hierin worden de verschillende blok-elementen gedefinieerd en
 	    });    
  
 </script>
-´´´
+```
 
 Hier wordt, nadat het document geladen is, de geolocatie opgevraagd, de stijl wordt veranderd naar gelang het seizoen en de jquery-ui tabs worden geinitialiseerd.
 
-´´´ html
+```
 <section id="inhoud" >
     <h1>Het weer</h1>
 	<div id="tabs">
@@ -62,7 +62,7 @@ Hier wordt, nadat het document geladen is, de geolocatie opgevraagd, de stijl wo
 		</div>
     </div>
 </section>
-´´´
+```
 De verschillende tabs worden gedefinieerd volgens de jquery-ui syntax. De titels van de tabs zijn links binnen een lijst die verwijzen naar een id. De inhoud van iedere tab bevindt zich in een aparte div.
 Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig de opmaak te doen, zodat deze niet conflicteerd met uw website)
 
