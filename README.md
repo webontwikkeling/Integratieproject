@@ -10,6 +10,15 @@ De applicatie is voorzien van een voorgeprogrammeerde stijlverandering afhankeli
 2  Implementering
 ------------------
 ### 2.1  Main page
+Om de weer-applicatie in je webpagina te implementeren dien je de volledige section met als id "inhoud" te kopiëren naar de plaats waar de applicatie moet worden getoond. In het blok "head" dien je de bestanden die in de map "lib" staan toe te voegen voor een mooie uitvoering.
+* `<script src="./lib/jquery.js"></script>`
+* `<script src="./lib/jquery-ui.js"></script>`
+* `<script src="./lib/weather.js"></script>`
+* `<script src="./lib/seasonStyle.js"></script>`
+
+Om ervoor te zorgen dat er een mooie opmaak ontstaat, voeg je ook het stylesheet-bestand toe in de blok "head".
+* `<link rel="stylesheet" type="text/css" href="StyleSheet.css">`
+
 
 
 
@@ -64,7 +73,10 @@ Hier wordt, nadat het document geladen is, de geolocatie opgevraagd, de stijl wo
 </section>
 ```
 De verschillende tabs worden gedefinieerd volgens de jquery-ui syntax. De titels van de tabs zijn links binnen een lijst die verwijzen naar een id. De inhoud van iedere tab bevindt zich in een aparte div.
-Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig de opmaak te doen, zodat deze niet conflicteerd met uw website)
+Alles bevindt zich binnen een section met als id inhoud (om makkelijk en veilig de opmaak te doen, zodat deze niet conflicteerd met uw website).
+
+### 3.1  Weather.js
+
 
 
 
