@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Geolocation - Het weer</title>
+    <script src="./lib/jquery.js"></script>
+	<script src="./lib/jquery-ui.js"></script>
+	<script src="./lib/weather.js"></script>
+	<script src="./lib/seasonStyle.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    
+	<script>
+	    $(document).ready(function () {
+	        getPos();
+	        changeStyle(getSeason());
+	        $("#tabs").tabs();
+	       
+	    });    
+                
+                   
+                </script>
+  
+</head>
+<body>
+<section id="inhoud" >
+    <h1>Het weer</h1>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">Vandaag</a></li>
+			<li><a href="#tabs-2">Morgen</a></li>
+			<li><a href="#tabs-3">Positie</a></li>
+		</ul>
+		</br>
+        </br>
+		<div id="tabs-1">
+			
+			<section id="Output">
+				<div id="Weather">
+				</div>	
+			</section>
+		</div>
+		<div id="tabs-2">
+			
+			<section id="Output">
+				<div id="WeatherTomorrow">
+				</div>
+			</section>
+		</div>
+	
+	<div id="tabs-3">
+	
+		<div id="GeoLocation">
+		</div>
+
+	
+	</div>
+    </div>
+</section>
+</body>
+</html>
