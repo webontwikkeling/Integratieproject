@@ -10,3 +10,7 @@ De applicatie is voorzien van een voorgeprogrammeerde stijlverandering afhankeli
 2 - Implementering
 ------------------
 
+
+
+3 - Code overzicht
+------------------
